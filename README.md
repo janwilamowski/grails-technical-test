@@ -3,7 +3,7 @@
 ### Task
 
 * The task is implement a website that allows the user to login to search the Github repoistories.
-* You have 3 hours to complete the test.
+* You have 4 hours to complete the test.
 * Please finish all the items outlined in the Requirements section first, then try to tackle items in the Nice to Haves section if you have time.
 * If you cannot finish the test, please explain why as we are reasonable and realize people have time constraints.
 
@@ -25,7 +25,8 @@ https://api.github.com/users/USER_NAME/repos
 * Once the search is clicked, the results should show a list of that user's public repositories with each item in a "name/number of watchers" format.
 * The results should be in json format for the view to consume
 * Use h2 as the datasource
-* It's not an requirement to style the pages
+* It's not a requirement to style the pages
+* We expect to have unit test code coverage of your code
 
 ### Nice to Haves
 
