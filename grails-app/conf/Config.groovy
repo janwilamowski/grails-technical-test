@@ -88,6 +88,8 @@ log4j = {
            'org.springframework',
            'org.hibernate',
            'net.sf.ehcache.hibernate'
+
+    debug 'grails.app.controllers.grailstest'
 }
 
 // Added by the Spring Security Core plugin:

@@ -54,5 +54,6 @@ grails.project.dependency.resolution = {
 
         compile ':cache:1.0.1'
         compile ":spring-security-core:1.2.7.3"
+        compile ":rest-client-builder:1.0.2"
     }
 }
