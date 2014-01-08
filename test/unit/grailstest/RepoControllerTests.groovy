@@ -10,6 +10,11 @@ import grails.plugins.rest.client.RestBuilder
 @TestFor(RepoController)
 class RepoControllerTests {
 
+    @Before
+    void setUp() {
+        messageSource.addMessage("grailstest.validation.username.blank", request.locale, "username cannot be blank")
+    }
+
     void testShow() {
         params.username = "carl"
         def model = controller.show()
@@ -29,6 +34,7 @@ class RepoControllerTests {
 
         assert view == "/repo/show"
         assert model.repos.myRepo == 42
+        assert flash.message == null
     }
 
     void testQueryFailure() {
@@ -43,5 +49,14 @@ class RepoControllerTests {
 
         assert view == "/repo/show"
         assert model.repos == []
+        assert flash.message == null
+    }
+
+    void testQueryInvalidUsername() {
+        controller.query("")
+
+        assert response.redirectedUrl == "/repo/show"
+        assert flash.message == "username cannot be blank"
+        assert model.isEmpty()
     }
 }

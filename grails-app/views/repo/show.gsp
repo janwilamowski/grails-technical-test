@@ -1,9 +1,14 @@
+<style>
+.notify { color: red; }
+</style>
 <title>GitHub Public Repositories</title>
 
 <h3>Repository listing</h3>
 
+<p class="notify">${flash.message}</p>
+
 <g:form name="repoListForm" action="query">
-    <label for="username">user: </label><g:textField name="username" value="${username}" />
+    <label for="username">username: </label><g:textField name="username" value="${username}" />
     <g:submitButton name="repoListSubmit" value="Query"/>
 </g:form>
 
