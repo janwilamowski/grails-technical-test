@@ -41,3 +41,7 @@ https://api.github.com/users/USER_NAME/repos
 * Send the link to your forked GitHub project to your recruiter.
 
 *Good luck!**
+
+### Comments
+
+The total time to complete the projects was over 4 hours. The reason for this is that I currently only have my old 2009 laptop available which is incredibly sluggish for Java development. Especially startup, configuration changes and tests are painfully slow. The actual time spent on development was far less than that. Having completed the main requirements, I didn't want to spend more time on the Nice To Haves, although it probably would not have taken much longer.
